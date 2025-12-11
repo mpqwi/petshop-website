@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clínica Veterinária Amor & Patas</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Biblioteca para gerar QR Code (PIX) -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+      defer
+    ></script>
+
+    <!-- Seu JS -->
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <!-- CABEÇALHO -->
+    <header>
+      <div class="nav">
+        <!-- LOGO BONITA -->
+        <div class="logo-box">
+          <!-- Se não tiver logo.png, só o texto aparece bonitinho -->
+          <img src="logo.png" alt="Logo da clínica" class="logo-img" />
+          <span class="logo-text">Clínica Veterinária</span>
+        </div>
+
+        <!-- MENU COM ABAS E SUBMENUS -->
+        <nav>
+          <ul class="menu">
+            <li><a href="#home">Início</a></li>
+
+            <li class="dropdown">
+              <a href="#">Produtos ▾</a>
+              <ul class="submenu">
+                <li><a href="#racoes">Rações</a></li>
+                <li><a href="#shampoos">Shampoos</a></li>
+                <li><a href="#petiscos">Petiscos</a></li>
+                <li><a href="#areia">Areia sanitária</a></li>
+                <li><a href="#products">+ Ver todos</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#">Médicos ▾</a>
+              <ul class="submenu">
+                <li><a href="#dra-ana">Dra. Ana Paula</a></li>
+                <li><a href="#dr-lucas">Dr. Lucas Silva</a></li>
+                <li><a href="#team">+ Equipe completa</a></li>
+              </ul>
+            </li>
+
+            <li class="dropdown">
+              <a href="#">Agendar ▾</a>
+              <ul class="submenu">
+                <li><a href="#booking">Consultas</a></li>
+                <li><a href="#booking">Vacinas</a></li>
+                <li><a href="#booking">Banho & Tosa</a></li>
+                <li><a href="#booking">+ Outros</a></li>
+              </ul>
+            </li>
+
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HOME -->
+      <section id="home" class="hero">
+        <div>
+          <div class="hero-badge">
+            <span>💉</span> Cuidado completo para seu melhor amigo
+          </div>
+          <h1>
+            Clínica Veterinária <span>Amor & Patas</span> 🐶🐱
+          </h1>
+          <p>
+            Consultas, vacinas, cirurgias, banho & tosa e muito carinho em um
+            só lugar. Agende pelo WhatsApp ou faça seu pedido de produtos
+            direto no site.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#booking" class="btn btn-primary">Agendar atendimento</a>
+            <a href="#products" class="btn btn-outline">Ver produtos</a>
+          </div>
+        </div>
+
+        <div class="hero-img">
+          <div>
+            <span>🐕‍🦺</span>
+            <p>
+              Ambiente seguro, humanizado e preparado para receber seu pet com
+              muito amor.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVIÇOS -->
+      <section id="services">
+        <h2 class="section-title">Serviços</h2>
+        <p class="section-subtitle">
+          Tudo o que seu pet precisa em um só lugar.
+        </p>
+
+        <div class="grid grid-3">
+          <div class="service-card">
+            <span>🩺</span>
+            <h3>Consultas e Check-up</h3>
+            <p>
+              Avaliação completa do seu pet, acompanhamento de saúde e
+              orientação personalizada.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <span>💉</span>
+            <h3>Vacinação</h3>
+            <p>
+              Carteira de vacinação sempre em dia para prevenir doenças e
+              proteger quem você ama.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <span>✂️</span>
+            <h3>Banho & Tosa</h3>
+            <p>
+              Banhos especiais, hidratação, tosa higiênica e estilizada com
+              cuidado e segurança.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <span>🏥</span>
+            <h3>Procedimentos e Cirurgias</h3>
+            <p>
+              Estrutura preparada para procedimentos com monitoramento e equipe
+              especializada.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <span>🍖</span>
+            <h3>Nutrição e Rações</h3>
+            <p>
+              Indicação das melhores rações e suplementos de acordo com o porte,
+              idade e saúde do pet.
+            </p>
+          </div>
+
+          <div class="service-card">
+            <span>🐾</span>
+            <h3>Acessórios e Cuidados</h3>
+            <p>
+              Coleiras, brinquedos, produtos de higiene e tudo para deixar seu
+              pet feliz.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- EQUIPE -->
+      <section id="team">
+        <h2 class="section-title">Nossa Equipe</h2>
+        <p class="section-subtitle">
+          Profissionais apaixonados por cuidar de quem é importante para você.
+        </p>
+
+        <div class="grid grid-3">
+          <div id="dra-ana" class="team-card card">
+            <div class="avatar">👩‍⚕️</div>
+            <h3>Dra. Ana Paula</h3>
+            <small>Médica Veterinária – CRMV 0000</small>
+            <p>
+              Especialista em clínica geral e medicina preventiva para cães e
+              gatos.
+            </p>
+          </div>
+
+          <div id="dr-lucas" class="team-card card">
+            <div class="avatar">👨‍⚕️</div>
+            <h3>Dr. Lucas Silva</h3>
+            <small>Cirurgião Veterinário</small>
+            <p>
+              Atuação em cirurgias, anestesia e acompanhamento em pós-operatório
+              seguro.
+            </p>
+          </div>
+
+          <div class="team-card card">
+            <div class="avatar">🧴</div>
+            <h3>Maria Souza</h3>
+            <small>Banho & Tosa</small>
+            <p>
+              Profissional especializada em banho & tosa com técnicas de manejo
+              gentil.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRODUTOS -->
+      <section id="products">
+        <h2 class="section-title">Produtos</h2>
+        <p class="section-subtitle">
+          Rações, petiscos e cuidados essenciais. Adicione ao carrinho e
+          finalize por PIX.
+        </p>
+
+        <div class="products-grid">
+          <div class="product-card" id="racoes">
+            <div class="product-image">🥫</div>
+            <h3>Ração Premium Adulto 10kg</h3>
+            <p>Ração completa para cães adultos de porte médio e grande.</p>
+            <div class="product-price">R$ 189,90</div>
+            <button
+              class="btn btn-primary add-to-cart"
+              data-name="Ração Premium Adulto 10kg"
+              data-price="189.90"
+            >
+              Adicionar ao carrinho
+            </button>
+          </div>
+
+          <div class="product-card" id="petiscos">
+            <div class="product-image">🦴</div>
+            <h3>Petisco Mastigável</h3>
+            <p>Ajuda na higiene bucal e é perfeito como recompensa.</p>
+            <div class="product-price">R$ 24,90</div>
+            <button
+              class="btn btn-primary add-to-cart"
+              data-name="Petisco Mastigável"
+              data-price="24.90"
+            >
+              Adicionar ao carrinho
+            </button>
+          </div>
+
+          <div class="product-card" id="shampoos">
+            <div class="product-image">🧴</div>
+            <h3>Shampoo Hipoalergênico</h3>
+            <p>Ideal para peles sensíveis, com fragrância suave.</p>
+            <div class="product-price">R$ 39,90</div>
+            <button
+              class="btn btn-primary add-to-cart"
+              data-name="Shampoo Hipoalergênico"
+              data-price="39.90"
+            >
+              Adicionar ao carrinho
+            </button>
+          </div>
+
+          <div class="product-card" id="areia">
+            <div class="product-image">🐱</div>
+            <h3>Areia Sanitária 4kg</h3>
+            <p>Areia com ótima absorção e controle de odores.</p>
+            <div class="product-price">R$ 29,90</div>
+            <button
+              class="btn btn-primary add-to-cart"
+              data-name="Areia Sanitária 4kg"
+              data-price="29.90"
+            >
+              Adicionar ao carrinho
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- CARRINHO + PIX -->
+      <section id="cart">
+        <h2 class="section-title">Carrinho</h2>
+        <p class="section-subtitle">
+          Confira seu pedido e gere o QR Code PIX com o valor total.
+        </p>
+
+        <div class="cart-wrapper">
+          <!-- Lado esquerdo: itens -->
+          <div class="card">
+            <table class="cart-table">
+              <thead>
+                <tr>
+                  <th>Produto</th>
+                  <th>Qtd</th>
+                  <th>Valor</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody id="cart-items">
+                <!-- Itens via JS -->
+              </tbody>
+            </table>
+
+            <p id="cart-empty" class="cart-empty">Seu carrinho está vazio.</p>
+
+            <p class="cart-total">
+              Total: <span id="cart-total">R$ 0,00</span>
+            </p>
+
+            <div class="cart-actions">
+              <button id="clear-cart" class="btn btn-outline">
+                Limpar carrinho
+              </button>
+              <button id="checkout-btn" class="btn btn-primary">
+                Gerar PIX
+              </button>
+            </div>
+          </div>
+
+          <!-- Lado direito: PIX -->
+          <div class="pix-box">
+            <h3>Pagamento via PIX</h3>
+            <p>
+              Após conferir os itens, clique em <strong>Gerar PIX</strong>. Será
+              criado um QR Code de exemplo com o valor total do carrinho.
+              <br /><br />
+              <strong>Importante:</strong> este é um modelo. Para uso real, você
+              deve configurar a chave PIX correta da clínica.
+            </p>
+
+            <p style="margin-top: 0.5rem">
+              Valor total: <strong id="pix-value">R$ 0,00</strong>
+            </p>
+
+            <div id="qrcode"></div>
+
+            <div class="pix-key">
+              Chave PIX (exemplo):  
+              <span id="pix-key-text">clinica@exemplo.com</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AGENDAMENTO -->
+      <section id="booking">
+        <h2 class="section-title">Agendamento</h2>
+        <p class="section-subtitle">
+          Preencha os dados abaixo ou clique para agendar direto pelo WhatsApp.
+        </p>
+
+        <div class="card">
+          <form id="booking-form">
+            <div class="form-grid">
+              <div class="form-group">
+                <label for="cliente">Seu nome</label>
+                <input
+                  type="text"
+                  id="cliente"
+                  name="cliente"
+                  placeholder="Seu nome completo"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="telefone">Telefone / WhatsApp</label>
+                <input
+                  type="tel"
+                  id="telefone"
+                  name="telefone"
+                  placeholder="(00) 00000-0000"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="pet">Nome do pet</label>
+                <input
+                  type="text"
+                  id="pet"
+                  name="pet"
+                  placeholder="Nome do pet"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="data">Data desejada</label>
+                <input type="date" id="data" name="data" required />
+              </div>
+
+              <div class="form-group">
+                <label for="servico">Serviço</label>
+                <select id="servico" name="servico" required>
+                  <option value="">Selecione</option>
+                  <option>Consulta</option>
+                  <option>Vacinação</option>
+                  <option>Banho & Tosa</option>
+                  <option>Retorno</option>
+                  <option>Outro</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group" style="margin-top: 0.7rem">
+              <label for="obs">Observações</label>
+              <textarea
+                id="obs"
+                name="obs"
+                placeholder="Informe raça, idade do pet ou algo importante para o atendimento."
+              ></textarea>
+            </div>
+
+            <div
+              style="
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.7rem;
+                margin-top: 0.9rem;
+              "
+            >
+              <button type="submit" class="btn btn-primary">
+                Enviar dados pelo WhatsApp
+              </button>
+
+              <button
+                type="button"
+                id="whatsapp-direct"
+                class="btn btn-outline"
+              >
+                Abrir WhatsApp sem formulário
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- CONTATO -->
+      <section id="contact">
+        <h2 class="section-title">Contato</h2>
+        <p class="section-subtitle">
+          Estamos prontos para atender você e seu pet. Fale com a gente!
+        </p>
+
+        <div class="contact-grid">
+          <div class="card">
+            <div class="contact-item">
+              <div class="contact-label">WhatsApp:</div>
+              <div>
+                <a
+                  href="https://wa.me/5599999999999"
+                  target="_blank"
+                  rel="noopener"
+                  >+55 (99) 99999-9999</a
+                >
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-label">Telefone:</div>
+              <div>(99) 3333-3333</div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-label">Endereço:</div>
+              <div>
+                Rua Exemplo, 123 – Bairro Centro<br />
+                Sua Cidade – UF
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-label">Horário de funcionamento:</div>
+              <div>Seg a Sex: 8h às 18h • Sáb: 8h às 12h</div>
+            </div>
+          </div>
+
+          <div class="map-box">
+            <div class="map-placeholder">
+              🗺️ Mapa da clínica<br />
+              <small>
+                Aqui vai o mapa do Google Maps. Substitua esta área por um
+                <code>&lt;iframe&gt;</code> com o endereço da clínica.
+              </small>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Clínica Veterinária Amor & Patas • Todos os
+      direitos reservados.
+    </footer>
+  </body>
+</html>
